@@ -5,7 +5,6 @@
 int main(){
     int first;
     int second;
-    printf("Please enter 2 positive numbers:");
     scanf("%d%d",&first,&second);
     printf("The Armstrong numbers are: ");
         for(int i=first; i<=second; i++){
