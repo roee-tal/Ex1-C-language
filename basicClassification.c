@@ -4,7 +4,7 @@
 
 int isPrime(int i){
     // double sqr = sqrt(i);
-    for(int j=2; j<i/2; j++){
+    for(int j=2; j<i/2+1; j++){
         if(i%j == 0)
             return 0;
     }
