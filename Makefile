@@ -18,6 +18,7 @@ maindrec: main.o libclassrec.so
 libclassloops.so: basicClassification.o advancedClassificationLoop.o
 	gcc -shared -o libclassloops.so basicClassification.o advancedClassificationLoop.o
 
+loops: libclassloops.a
 libclassloops.a: basicClassification.o advancedClassificationLoop.o
 	$(AR) -rcs libclassloops.a basicClassification.o advancedClassificationLoop.o  
  
