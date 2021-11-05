@@ -1,19 +1,18 @@
 #include "NumClass.h"
-#include <math.h>
 
 
 int isPrime(int i){
     // double sqr = sqrt(i);
     for(int j=2; j<i/2+1; j++){
         if(i%j == 0)
-            return 0;
+            return False;
     }
-    return 1;
+    return True;
 }
 
 int factorial(int i){
     if(i==0){
-        return 1;
+        return True;
     }
     return i*factorial(i-1);
 

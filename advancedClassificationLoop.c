@@ -1,5 +1,4 @@
 #include "NumClass.h"
-#include <math.h>
 
 int isPalindrome(int i){
     int palind;
@@ -11,10 +10,10 @@ int isPalindrome(int i){
         temp = temp/10;
     }
     if(rev==i){
-        return 1;
+        return True;
     }
     else{
-        return 0;
+        return False;
     }
 }
     int numLen(int i){
@@ -44,9 +43,9 @@ int isPalindrome(int i){
             i=i/10;
         }
         if(sum==i){
-            return 1;
+            return True;
         }
-        else {return 0;}
+        else {return False;}
     }
 
 

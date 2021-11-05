@@ -1,5 +1,4 @@
 #include "NumClass.h"
-#include <math.h>
 
     int numLen(int i){
         int length=0;
@@ -24,9 +23,9 @@
 int isPalindrome(int i){
 	int sum=0;
     if(i==reverseNum(i,sum)){
-        return 1;
+        return True;
     }    
-    return 0;
+    return False;
 } 
 
 int power(int oneNum, int length){
@@ -51,8 +50,8 @@ int isArmstrong(int i){
     int length=numLen(i);
     int sum=0;
     if(i==isArmstrong2(i,sum,length)){
-        return 1;
+        return True;
     }
-    return 0;
+    return False;
 }
 
